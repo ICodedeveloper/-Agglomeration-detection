@@ -1,0 +1,10 @@
+while(True):
+    try:
+        time.sleep(5)
+        arquivo_video = cameracel
+        cap = cv2.VideoCapture(arquivo_video)
+        conectado, video = cap.read()
+    except cv2.error as exec:
+        raise ReiniciarConexao('Camera Ausente')
+    if conectado == True:
+        break
